@@ -1,0 +1,74 @@
+.checkbox {
+  width: 500px;
+  padding: 40px;
+  margin: 0 auto;
+  box-shadow: 0 0 3px 2px black;
+  border-radius: 10px;
+}
+
+.checkbox__heading {
+  margin-top: 0;
+  font-family: sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.checkbox__content + .checkbox__content {
+  margin-top: 10px;
+}
+
+.checkbox__label {
+  display: flex;
+  align-items: center;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.checkbox__input--first:checked + .checkbox__box--first {
+  background-image: url(./img/basketball-ball.png);
+}
+
+.checkbox__box {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  /* margin-top: 10px; */
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+}
+
+.checkbox__input--second:disabled ~ .checkbox__box--seocnd {
+  border-color: #ccc;
+  color: #ccc;
+}
+
+.checkbox__input--third:disabled + .checkbox__box--third {
+  background-image: url(./img/hockey-puck.png);
+  opacity: 0.4;
+}
+
+.checkbox__decription--third {
+  color: #ccc;
+}
+
+.checkbox__input--fourth:checked + .checkbox__box--fourth {
+  background-image: url(./img/table-tennis.png);
+}
+
+.checkbox__descripton {
+  margin-left: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
